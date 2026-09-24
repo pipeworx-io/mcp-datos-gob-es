@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-datos-gob-es",
-  "version": "0.1.0",
-  "description": "datos.gob.es — Spanish open-data catalogue",
+  "version": "0.1.1",
+  "description": "datos.gob.es MCP.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-datos-gob-es": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "datos-gob-es"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-datos-gob-es"
+    "url": "git+https://github.com/pipeworx-io/mcp-datos-gob-es.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-ad63384744ea5f7e6cf34eeaa2cabb1b8b77f28258714e9a21fa8966ed2ac45e",
+    "sourceCommit": "839ab210d969ef7f822cd747ea516f6bb49e9231"
   }
 }
