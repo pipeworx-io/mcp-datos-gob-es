@@ -1,0 +1,62 @@
+[
+  {
+    "name": "datasets",
+    "description": "Search the Spanish open data portal (datos.gob.es) catalog by keyword, theme, or both; returns paginated dataset listings with title, publisher, and download links.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "page": {
+          "type": "number"
+        },
+        "page_size": {
+          "type": "number"
+        },
+        "theme": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "name": "dataset",
+    "description": "Fetch full metadata for a single datos.gob.es dataset by its ID; returns title, description, publisher, themes, distribution URLs, and license.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "publishers",
+    "description": "List public-sector publishers on datos.gob.es (Spanish open data portal); returns publisher names and IDs, up to 50 results.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  {
+    "name": "themes",
+    "description": "List available dataset themes/categories on datos.gob.es (e.g. Economy, Health, Transport); returns theme labels and IDs for use as a filter in the datasets tool.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "number"
+        }
+      }
+    }
+  }
+]

@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-datos-gob-es",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "datos.gob.es MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-datos-gob-es": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "datos-gob-es"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-datos-gob-es.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/datos-gob-es",
   "pipeworx": {
-    "sourceHash": "v1-dd8c9d546fa11eac6790dcebcb6f8c9c70be0b535e751c67a3a8233a4bfeaa6d",
-    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
+    "mode": "gateway",
+    "slug": "datos-gob-es",
+    "gatewaySlug": "datos-gob-es",
+    "sourceHash": "v1-1ad858464c03cb0c0856d186ab449ce55803370545795f5fe47d5b4f747dbcba",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
