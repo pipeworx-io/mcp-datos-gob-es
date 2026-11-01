@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-datos-gob-es",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "datos.gob.es MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "datos-gob-es",
     "gatewaySlug": "datos-gob-es",
-    "sourceHash": "v1-1ad858464c03cb0c0856d186ab449ce55803370545795f5fe47d5b4f747dbcba",
-    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
+    "sourceHash": "v1-784a74f02675941868bcd6cfddc3c76927cc1b8e31f2f95c36ea31ea6cfb4d5d",
+    "sourceCommit": "e707a4bb6209f432984c0a83bf64b3138130db89"
   }
 }
